@@ -4,41 +4,39 @@
 To design and implement the Merge Sort algorithm to sort online orders according to their estimated delivery time in minutes, arranging orders in ascending order so that quicker deliveries are prioritized first.
 
 ## Introduction
-Merge Sort is a divide-and-conquer sorting algorithm. It divides an array into smaller parts, sorts those parts individually, and merges them to produce a sorted array.
+Merge Sort is a sorting algorithm based on the Divide and Conquer technique. It divides an array into smaller parts, sorts them individually, and merges them to produce a sorted array.
 
-In this practical, Merge Sort is used to arrange online orders based on their estimated delivery times, from the shortest delivery time to the longest.
+In this practical, Merge Sort is used to arrange online orders based on their estimated delivery times, from shortest to longest.
 
 ## Algorithm
-1. Read the number of online orders.
-2. Enter the estimated delivery time for each order.
-3. Divide the array into two halves.
-4. Recursively sort both halves.
-5. Merge the two sorted halves into one sorted array.
-6. Display the orders in ascending order of delivery time.
+1. Start the program.
+2. Read the number of online orders.
+3. Enter the estimated delivery time for each order.
+4. Divide the array into two halves.
+5. Recursively sort both halves.
+6. Merge the two sorted halves into one sorted array.
+7. Display the sorted delivery times in ascending order.
+8. Stop the program.
 
 ## Sample Input
 ```text
-Enter number of online orders: 6
-Enter estimated delivery times (minutes): 45 20 60 15 35 10
+Enter number of orders: 6
+Enter delivery times in minutes:
+45 20 60 10 35 15
 ```
 
 ## Sample Output
 ```text
-Orders sorted by delivery time:
-Order 1: 10 minutes
-Order 2: 15 minutes
-Order 3: 20 minutes
-Order 4: 35 minutes
-Order 5: 45 minutes
-Order 6: 60 minutes
+Sorted delivery times:
+10 15 20 35 45 60
 ```
 
 ## Concepts Used
 - Divide and Conquer
 - Recursion
-- Array
+- Arrays
+- Sorting
 - Merging of sorted arrays
-- Dynamic memory allocation
 
 ## Time and Space Complexity
 
@@ -54,7 +52,7 @@ Order 6: 60 minutes
 - Prioritizes quicker deliveries first.
 - Uses the Merge Sort algorithm.
 - Handles multiple online orders.
-- Rejects negative delivery times.
+- Uses recursion to divide and sort the array.
 
 ## Compilation and Execution
 
@@ -65,4 +63,4 @@ g++ -std=c++17 -Wall -Wextra main.cpp -o practical.exe
 ```
 
 ## Conclusion
-The Merge Sort algorithm successfully sorts online orders according to their estimated delivery times. It uses the divide-and-conquer technique and provides O(n log n) time complexity in the best, average, and worst cases.
+The Merge Sort algorithm is successfully implemented in C++ to sort online orders according to their estimated delivery times. It uses the Divide and Conquer technique and provides O(n log n) time complexity in the best, average, and worst cases.
